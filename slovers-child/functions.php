@@ -46,7 +46,7 @@ add_action('wp_enqueue_scripts', 'pizzaro_child_scripts', 100);
 
 function pz_child_enqueue_styles()
 {
-    wp_enqueue_script('google-map', 'https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyBeXvPAtj9HDj5jMgeqjCtat5DXmQCXV7g', array(), true, true);
+    wp_enqueue_script('google-map', 'https://maps.googleapis.com/maps/api/js?libraries=places&key=', array(), true, true);
     wp_enqueue_script('custom', get_stylesheet_directory_uri() . '/scripts/custom.js', array(), true, true);
 }
 
