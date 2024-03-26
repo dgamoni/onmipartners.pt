@@ -1,0 +1,717 @@
+/*
+
+Theme Name:     Sushi Lovers Child
+
+Theme URI:      https://sushilovers.pt
+
+Author:         ONMI Partners
+
+Author URI:     https://onmi.pt
+
+Description:    Sushi Lovers.
+
+Template:       slovers
+
+Version:        1.2.2
+
+License:        GNU General Public License v2 or later
+
+License URI:    http://www.gnu.org/licenses/gpl-2.0.html
+
+Text Domain:    slovers-child
+
+Tags:           two-columns, left-sidebar, right-sidebar, custom-background, custom-colors, custom-header, custom-menu, featured-images, full-width-template, threaded-comments, accessibility-ready, rtl-language-support
+
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i');
+
+@font-face {
+
+    font-family: 'icomoon';
+
+    src: url('fonts/Dolgan_Bold_Italic.eot?') format("eot");
+
+    src: url('fonts/Dolgan_Bold_Italic.ttf') format('truetype'),
+
+    url('fonts/Dolgan_Bold_Italic.woff') format('woff'),
+
+    url('fonts/Dolgan_Bold_Italic.svg#Dolgan') format('svg');
+
+    font-weight: normal;
+
+    font-style: normal;
+
+}
+
+
+
+body .header-phone-numbers .phone-number a {
+
+    color: #fff;
+
+    font-size: 25.2px;
+
+}
+
+
+
+body .header-v2 .site-branding a img {
+
+    width: auto;
+
+    margin: 0 auto;
+
+    height: 100px;
+
+}
+
+
+
+body .stuck a.custom-logo-link {
+
+    height: 57px;
+
+    overflow: hidden;
+
+}
+
+
+
+h2.woocommerce-loop-product__title {
+
+    color: #006072;
+
+    font-size: 2em !important;
+
+    font-weight: 600 !important;
+
+}
+
+
+
+body ul.products li.product .ywapo_group_container_radio h3 {
+
+    color: #006072;
+
+    font-size: 1em;
+
+    font-weight: 100;
+
+    letter-spacing: 0px;
+
+}
+
+
+
+body .section-products-with-gallery ul.products li.product .product-image-wrapper {
+
+    margin: 0;
+
+    font-size: 17px;
+
+}
+
+
+
+.section-products-with-gallery ul.products li.product:hover {
+
+    transform: none;
+
+}
+
+
+
+.section-products-with-gallery ul.products li.product:hover .product-content-wrapper, .section-products-with-gallery ul.products li.product:hover .product-image-wrapper {
+
+    border-color: #006072;
+
+}
+
+
+
+.section-products-with-gallery ul.products li.product .product-image-wrapper {
+
+    padding-right: 20px;
+
+    padding-left: 20px;
+
+}
+
+ul.products li.product .ywapo_input_container_radio.ywapo_input_container{
+
+    z-index: 0;
+
+}
+
+.ywapo_input_container_radio.pz-radio-default label {
+
+    font-size: 13px;
+
+    color: #006072;
+
+    padding: 10px 3px;
+
+    line-height: 12px;
+
+    border: 2px solid #006072;
+
+    max-width: 48px;
+
+    z-index: 10;
+
+}
+
+
+
+.ywapo_input_container_radio.pz-radio-default label span {
+
+    font-weight: 600;
+
+    color: #006072;
+
+    font-size: 0.9em;
+
+    line-height: .8;
+
+    letter-spacing: -1px;
+
+}
+
+
+
+ul.products li.product .woocommerce-product-details__short-description {
+
+    padding: 0 0;
+
+}
+
+
+
+body .ywapo_input_container_radio.pz-radio-default label {
+
+    border: 2px solid #006072;
+
+    border-radius: 30px;
+
+}
+
+
+
+.section-products-with-gallery ul.products li.product .product-content-wrapper, .section-products-with-gallery ul.products li.product .product-image-wrapper {
+
+    padding-right: 20px;
+
+    padding-left: 20px;
+
+}
+
+
+
+ul.products li.product .woocommerce-product-details__short-description {
+
+    font-size: 0.8em
+
+}
+
+
+
+body .ywapo_input_container_radio.pz-radio-default .ywapo_label_price .amount {
+
+    color: #006072;
+
+    font-size: 1.1em;
+
+    font-family: "Yanone Kaffeesatz";
+
+}
+
+
+
+.ywapo_input_container_radio{
+
+    position: relative;
+
+}
+
+.ywapo_input_container_radio label:before {
+
+    content: " ";
+
+    width: 48px;
+
+    border-radius: 100%;
+
+    height: 48px;
+
+    border: 2px solid #006072;
+
+    position: absolute;
+
+    -webkit-transform: translate(0,-50%);
+
+    -moz-transform: translate(0,-50%);
+
+    -ms-transform: translate(0,-50%);
+
+    -o-transform: translate(0,-50%);
+
+    transform: translate(0,-50%);
+
+    top: 50%;
+
+    left: 0;
+
+    transition: all .2s ease-in-out 0s;
+
+    display: block!important;
+
+    z-index: -1;
+
+}
+
+
+
+.ywapo_input_container_radio:hover label:before {
+
+        background-color: #006072;
+
+    }
+
+.ywapo_input_container_radio.pz-radio-default input+label:before {
+
+    content: "";
+
+}
+
+.ywapo_input_container.ywapo_input_container_radio.pz-radio-default > label {
+
+    text-align: center;
+
+}
+
+.ywapo_input_container_radio:hover label span {
+
+    color: #fff !important;
+
+}
+
+
+
+body ul.products li.product:hover .hover-area {
+
+    padding-top: 0;
+
+    padding-bottom: 0;
+
+}
+
+#wpmenucartli {
+
+    margin: 0;
+    z-index: 9;
+
+}
+
+a.wpmenucart-contents {
+    width: 132px !important;
+}
+
+.ywapo_input_container_radio:not(.pz-radio-default) label {
+    font-size: 0.613em;
+}
+
+.single-product div.product form.cart .ywapo_input_container_radio:not(.pz-radio-default) input:checked+label::before {
+    background-color: #006072;
+    border: 2px solid #006072;
+}
+
+.site-header {
+    background-image: url(http://onmipartners.pt/sushilovers/wp-content/uploads/2017/11/header_SushiLovers.svg) !important;
+}
+
+.products .owl-item>.product.hover .product-content-wrapper,
+.products .owl-item>.product.hover .product-image-wrapper,
+.products .owl-item>.product:hover .product-content-wrapper,
+.products .owl-item>.product:hover .product-image-wrapper,
+ul.products li.product.hover .product-content-wrapper,
+ul.products li.product.hover .product-image-wrapper,
+ul.products li.product:hover .product-content-wrapper,
+ul.products li.product:hover .product-image-wrapper {
+
+    border-color: #006072 !important;
+    
+}
+
+.user_icon_area {
+    position: relative;
+    right: 0px;
+    width: 30px;
+}
+
+.user_icon_area img {
+    border-radius: 50%;
+}
+
+@media (min-width: 1200px) {
+    .header-phone-numbers {
+    margin-left: -70px;
+    }
+     #wpmenucartli {
+        z-index: 9;
+        left: 724px;
+    }
+     .user_icon_area {
+        position: relative;
+        margin-right: 0;
+        width: 30px;
+    }
+}
+@media (min-width: 992px) {
+
+    body .section-products-with-gallery ul.products li.product {
+
+        min-height: 500px;
+
+        /*padding-top: 60px;*/
+
+    }
+
+
+
+    /*body .section-products-with-gallery ul.products li.product:hover{*/
+
+    /*padding-top: 0;*/
+
+    /*}*/
+
+}
+
+
+
+ .section-products-with-gallery .owl-nav .owl-prev {
+
+    left: -3.125em;
+
+}
+
+
+
+ .section-products-with-gallery .owl-nav .owl-next {
+
+    right: -3.125em;
+
+}
+
+
+
+ ul.products li.product img {
+
+    display: block;
+
+    margin: 16px auto 1.02em;
+
+}
+
+
+
+ .site-content {
+
+    outline: 0;
+
+    /*margin-top: -170px;*/
+
+}
+
+
+
+body header#masthead {
+
+    background-size: cover;
+
+    background-repeat: no-repeat;
+
+    background-position: 50% 50%;
+
+}
+
+
+
+.input-text, input[type=email], input[type=password], input[type=search], input[type=text], input[type=url], textarea,
+
+.page-template-template-contactpage .contact-form label {
+
+    width: 100%;
+
+}
+
+
+
+.page-template-template-contactpage .contact-form h2, .page-template-template-contactpage .store-info h2, .page-template-template-contactpage h1,
+
+.page-template-template-contactpage .store-info h3, .page-template-template-contactpage .contact-form label {
+
+    color: #6ba3c6;
+
+}
+
+
+
+.page-template-template-contactpage .contact-form label input {
+
+    color: #333e48;
+
+}
+
+
+
+.page-template-template-contactpage input[type=submit] {
+
+    background-color: #6ba3c6;
+
+}
+
+.ywapo_input_container_radio.pz-radio-default input:checked+label:before{
+
+    content: ''!important;
+
+}
+
+header#masthead {
+
+    background: transparent;
+
+    position: relative;
+
+    z-index: 9999;
+
+}
+
+@media (min-width: 992px){
+
+    .contact-form-with-address .col-md-9 {
+
+        width: 60%;
+
+    }
+
+    .contact-form-with-address .col-md-3 {
+
+        width: 40%;
+
+    }
+
+}
+
+
+
+.page-template-template-contactpage .banner-bg{
+
+    height: 250px!important;
+
+}
+
+.page-template-template-contactpage .banner {
+
+      margin-bottom: 0;
+
+    position: relative;
+
+}
+
+.page-template-template-contactpage .contact-map {
+
+    position: relative;
+
+}
+
+
+
+#map {
+
+    width: 100%;
+
+    height: 600px;
+
+    background-color: grey;
+
+}
+
+.site-footer.footer-v1 .footer-newsletter form input[type=email] {
+
+    width: 100%;
+
+    min-height: 3.938em;
+
+    padding-left: 1.875em;
+
+    border: none;
+
+    padding-right: 12em;
+
+}
+
+.site-footer.footer-v1 .footer-newsletter form input[type=submit] {
+
+    padding: .657em 3.575em;
+
+    position: absolute;
+
+    top: 50%;
+
+    right: 7px;
+
+    transform: translate(0,-51%);
+
+    background-color: #006072;
+
+}
+
+.site-footer.footer-v1 .footer-newsletter form input[type=submit]:hover,
+
+.site-footer.footer-v1 .footer-newsletter form input[type=submit]:focus,
+
+.site-footer.footer-v1 .footer-newsletter form input[type=submit]:active{
+
+    background-color: #005160
+
+}
+
+.site-footer.footer-v1 .footer-newsletter form .newsletter-form {
+
+    position: relative;
+
+}
+
+.footer-logo img{
+
+    margin:0 auto;
+
+}
+
+.woocommerce .quantity .plus, .woocommerce .quantity .minus, .woocommerce-page .quantity .plus, .woocommerce-page .quantity .minus {
+
+    display: block;
+
+    padding: 0;
+
+    margin: 0;
+
+    position: absolute;
+
+    text-align: center;
+
+    width: 1.387em;
+
+    height: 1.12em;
+
+    text-decoration: none;
+
+    overflow: visible;
+
+    text-decoration: none;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    color: #515151;
+
+    border: 1px solid #bbb3b9;
+
+    background-color: #ebe9eb;
+
+    text-shadow: none;
+
+    line-height: 1;
+
+    background-image: none;
+
+}
+
+.woocommerce .quantity, .woocommerce-page .quantity {
+
+    position: relative;
+
+    margin: 0 auto;
+
+    overflow: hidden;
+
+    zoom: 1;
+
+    padding-right: 1.1em;
+
+    display: inline-block;
+
+
+
+}
+
+.woocommerce .quantity input::-webkit-outer-spin-button,
+
+.woocommerce .quantity input::-webkit-inner-spin-button {
+
+     display: none;
+
+    -webkit-appearance: none;
+
+    margin: 0;
+
+}
+
+.woocommerce-breadcrumb {
+
+    padding-bottom: 0;
+
+    margin-top: 30px;
+
+}
+
+.banner .caption {
+
+    right: .5em;
+
+    width: 87%;
+
+    text-align: right;
+
+}
+
+.section-products-with-gallery ul.products li.product .product-image-wrapper {
+
+    min-height: 200px;
+
+}
+
+.owl-carousel .owl-stage-outer{
+
+    height: 220px;
+
+    overflow: hidden;
+
+}
+
+
+.header-phone-numbers .select-city-phone-numbers {
+    font-weight: bold;
+}
+
+.cartcontents {
+    font-weight: 100;
+}
+.main-navigation .icon-combinados {
+    font-size: 30px;
+    vertical-align: middle;
+}
+
+.banner a[href="#"] {
+    cursor: default;
+}
+
+.woocommerce-breadcrumb {
+    display: none;
+}
+
+.pizzaro-order-steps ul li+li {
+    padding-left: 150px;
+}
