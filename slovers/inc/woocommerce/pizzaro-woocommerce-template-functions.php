@@ -556,7 +556,8 @@ if ( ! function_exists( 'pizzaro_before_login_text' ) ) {
 	function pizzaro_before_login_text() {
 		?>
 		<p class="before-login-text">
-			<?php echo apply_filters( 'pizzaro_before_login_text', esc_html__( 'Welcome back! Sign in to your account', 'pizzaro' ) ); ?>
+			<?php //echo apply_filters( 'pizzaro_before_login_text', esc_html__( 'Welcome back! Sign in to your account', 'pizzaro' ) ); ?>
+			<?php echo apply_filters( 'pizzaro_before_login_text', esc_html__( 'Bem vindo. Por favor faça login', 'pizzaro' ) ); ?>
 		</p>
 		<?php
 	}
@@ -569,7 +570,8 @@ if ( ! function_exists( 'pizzaro_before_register_text' ) ) {
 	function pizzaro_before_register_text() {
 		?>
 		<p class="before-register-text">
-			<?php echo apply_filters( 'pizzaro_before_register_text', esc_html__( 'Create your very own account', 'pizzaro' ) ); ?>
+			<?php //echo apply_filters( 'pizzaro_before_register_text', esc_html__( 'Create your very own account', 'pizzaro' ) ); ?>
+			<?php echo apply_filters( 'pizzaro_before_register_text', esc_html__( 'Crie a sua conta', 'pizzaro' ) ); ?>
 		</p>
 		<?php
 	}

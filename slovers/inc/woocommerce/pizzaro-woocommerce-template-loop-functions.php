@@ -180,24 +180,7 @@ if( ! function_exists( 'pizzaro_shop_archive_header' ) ) {
 				}
 			}
 			?>
-			<div class="shop-archive-header<?php if ( ! empty( $image_url ) ) : ?> has-bg-image<?php endif; ?>" <?php if ( ! empty( $image_url ) ) : ?>style="background-image: url( <?php echo esc_url( $image_url ); ?> ); height:<?php echo esc_attr( $image_attributes[2] ); ?>px;"<?php endif; ?>>
-				<div class="shop-archive-content">
-					<?php if( ! empty( $args['title'] ) ) : ?>
-						<h3 class="title"><?php echo wp_kses_post( $args['title'] ); ?></h3>
-					<?php endif; ?>
-					<?php if( ! empty( $args['description'] ) ) :
-						echo wp_kses_post( $args['description'] );
-					endif; ?>
 
-					<?php if( apply_filters( 'pizzaro_shop_archive_header_breadcrumb', true ) ) :
-						$args = apply_filters( 'pizzaro_shop_archive_header_breadcrumb_defaults', array(
-							'delimiter'   => '<span class="delimiter"><i class="po po-arrow-right-slider"></i></span>'
-						) );
-						woocommerce_breadcrumb( $args );
-					endif; ?>
-				
-				</div>
-			</div>
 			<?php
 		}
 	}
