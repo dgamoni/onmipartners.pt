@@ -42,16 +42,23 @@
 			do_action( 'pizzaro_header_v2' ); 
 			if ( is_user_logged_in() ) { ?>
 				<a class="user_icon_area" href="<?php echo get_edit_user_link( $user_id ); ?>">
-					<img src="<?php echo esc_url( get_avatar_url( $user->ID ) ); ?>">
+					<!-- <img src="<?php //echo esc_url( get_avatar_url( $user->ID ) ); ?>"> -->
+					<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/account-icon.svg">
+				</a>
+				<a class="user_icon_area" href="<?php echo get_bloginfo('url'); ?>/cart/">
+					<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/cart-icon.svg">
 				</a>
 			<?php } else { ?>
 			<a class="user_icon_area" href="<?php echo wp_login_url(); ?>">
-				<img src="<?php echo  get_bloginfo('template_url') . '/assets/images/mystery.jpg'; ?>">
+				<!-- <img src="<?php //echo  get_bloginfo('template_url') . '/assets/images/mystery.jpg'; ?>"> -->
+				<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/account-icon.svg">
 			</a>
 		<?php } ?>
 		</div>
 		</div>
 	</header><!-- #masthead -->
+
+	<?php if( !is_front_page() ) { pizza_header_tabs(); } ?>
 
 	<?php
 	/**

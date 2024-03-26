@@ -159,3 +159,199 @@ add_filter( 'pizzaro_order_steps', function ($steps) {
 	    )
     );
 } );
+
+function pizza_header_tabs_html(){
+    echo '
+<ul class="kc_tabs_nav ui-tabs-nav kc_clearfix original">
+    <li class="ui-tabs-active">
+        <a href="#" data-prevent="scroll"><i class="icon-menus"></i> Combinados</a>
+    </li>
+    <li>
+        <a href="#" data-prevent="scroll"><i class="icon-uramakis"></i> Uramaki</a>
+    </li>
+    <li>
+        <a href="#" data-prevent="scroll"><i class="icon-hosomakis"></i> Hosomaki</a>
+    </li>
+    <li>
+        <a href="#" data-prevent="scroll"><i class="icon-gunkan"></i> Gunkan</a>
+    </li>
+    <li>
+        <a href="#" data-prevent="scroll"><i class="icon-niguiris"></i> Nigiri</a>
+    </li>
+    <li>
+        <a href="#" data-prevent="scroll"><i class="icon-sashimi"></i> Sashimi</a>
+    </li>
+    <li>
+        <a href="#" data-prevent="scroll"><i class="icon-tataki"></i> Tataki</a>
+    </li>
+    <li>
+        <a href="#" data-prevent="scroll"><i class="icon-tartaro"></i> Tártaro</a>
+    </li>
+    <li>
+        <a href="#" data-prevent="scroll"><i class="icon-ceviche"></i> Ceviche</a>
+    </li>
+    <li>
+        <a href="#" data-prevent="scroll"><i class="icon-temaki"></i> Temaki</a>
+    </li>
+    <li>
+        <a href="#" data-prevent="scroll"><i class="icon-quentes"></i> Quentes</a>
+    </li>
+    <li>
+        <a href="#" data-prevent="scroll"><i class="icon-bebidas"></i> Bebidas</a>
+    </li>
+    <li>
+        <a href="#" data-prevent="scroll"><i class="icon-sobremesa"></i> Sobremesas</a>
+    </li>
+    <li>
+        <a href="#" data-prevent="scroll"><i class="icon-extras"></i> Extras</a>
+    </li>
+</ul>
+    ';
+}
+function pizza_header_tabs() {
+    echo do_shortcode('
+        [kc_row use_container="yes" _id="824890" cols_gap="{`kc-css`:{}}" force="__empty__"]
+            [kc_column width="12/12" _id="656687" col_container_class="stretch-full-width"]
+                [kc_tabs active_section="1" _id="29983" class="products-with-gallery-tabs" type="horizontal_tabs"]
+                    [kc_tab title="Combinados" _id="178532" icon_option="yes" icon="icon-menus" css_custom="{`kc-css`:{`any`:{`typography`:{`font-family|`:`Open Sans`}}}}"]
+                        [pizzaro_products_with_gallery orderby="__empty__" order="__empty__" _id="691737" shortcode_tag="product_category" limit="4" columns="4" category="64"]
+                        [/pizzaro_products_with_gallery][/kc_tab][kc_tab title="Uramaki" _id="986533" icon_option="yes" icon="icon-uramakis"]
+                        [pizzaro_products_with_gallery orderby="date" order="desc" _id="231958" shortcode_tag="product_category" limit="4" columns="4" category="63"]
+                        [/pizzaro_products_with_gallery][/kc_tab][kc_tab title="Hosomaki" _id="512358" icon_option="yes" icon="icon-hosomakis"]
+                        [pizzaro_products_with_gallery orderby="__empty__" order="__empty__" _id="799695" shortcode_tag="product_category" limit="4" columns="4" category="64"]
+                        [/pizzaro_products_with_gallery][/kc_tab][kc_tab title="Gunkan" _id="101054" icon_option="yes" icon="icon-gunkan"]
+                        [pizzaro_products_with_gallery orderby="__empty__" order="__empty__" _id="886009" shortcode_tag="product_category" limit="4" columns="4" category="65"]
+                        [/pizzaro_products_with_gallery][/kc_tab][kc_tab title="Nigiri" _id="321731" icon_option="yes" icon="icon-niguiris"]
+                        [pizzaro_products_with_gallery orderby="__empty__" order="__empty__" _id="310713" shortcode_tag="product_category" limit="4" columns="4" category="66"]
+                        [/pizzaro_products_with_gallery][/kc_tab][kc_tab title="Sashimi" _id="668016" icon_option="yes" icon="icon-sashimi"]
+                        [pizzaro_products_with_gallery orderby="date" order="__empty__" _id="630038" shortcode_tag="product_category" limit="4" columns="4" category="67"]
+                        [/pizzaro_products_with_gallery][/kc_tab][kc_tab title="Tataki" _id="349417" icon_option="yes" icon="icon-tataki"]
+                        [pizzaro_products_with_gallery orderby="__empty__" order="__empty__" _id="516535" shortcode_tag="product_category" limit="4" columns="4" category="68"]
+                        [/pizzaro_products_with_gallery][/kc_tab][kc_tab title="Tártaro" _id="931914" icon_option="yes" icon="icon-tartaro"]
+                        [pizzaro_products_with_gallery orderby="date" order="__empty__" _id="296089" shortcode_tag="product_category" limit="4" columns="4" category="69"]
+                        [/pizzaro_products_with_gallery][/kc_tab][kc_tab title="Ceviche" _id="799082" icon_option="yes" icon="icon-ceviche" css_custom="{`kc-css`:{`any`:{`typography`:{`font-family|`:`Open Sans`}}}}"]
+                        [pizzaro_products_with_gallery orderby="__empty__" order="__empty__" _id="521617" shortcode_tag="product_category" limit="4" columns="4" category="70"]
+                        [/pizzaro_products_with_gallery][/kc_tab][kc_tab title="Temaki" _id="984832" icon_option="yes" icon="icon-temaki" css_custom="{`kc-css`:{`any`:{`typography`:{`font-family|`:`Open Sans`}}}}"]
+                        [pizzaro_products_with_gallery orderby="__empty__" order="__empty__" _id="135382" shortcode_tag="product_category" limit="4" columns="4" category="71"]
+                        [/pizzaro_products_with_gallery][/kc_tab][kc_tab title="Quentes" _id="365288" icon_option="yes" icon="icon-quentes" css_custom="{`kc-css`:{`any`:{`typography`:{`font-family|`:`Open Sans`}}}}"]
+                        [pizzaro_products_with_gallery orderby="__empty__" order="__empty__" _id="192925" shortcode_tag="product_category" limit="4" columns="4" category="72"][/pizzaro_products_with_gallery]
+                    [/kc_tab]
+                    [kc_tab title="Bebidas" _id="79750" icon_option="yes" icon="icon-bebidas" css_custom="{`kc-css`:{`any`:{`typography`:{`font-family|`:`Open Sans`}}}}"]
+                        [pizzaro_products_with_gallery orderby="__empty__" order="__empty__" _id="176395" shortcode_tag="product_category" limit="4" columns="4" category="73"]
+                        [/pizzaro_products_with_gallery]
+                    [/kc_tab]
+                    [kc_tab title="Sobremesas" _id="956262" icon_option="yes" icon="icon-sobremesa" css_custom="{`kc-css`:{`any`:{`typography`:{`font-family|`:`Open Sans`}}}}"]
+                        [pizzaro_products_with_gallery orderby="__empty__" order="__empty__" _id="705947" shortcode_tag="product_category" limit="4" columns="4" category="74"]
+                        [/pizzaro_products_with_gallery]
+                    [/kc_tab]
+                    [kc_tab title="Extras" _id="309816" icon_option="yes" icon="icon-extras" css_custom="{`kc-css`:{`any`:{`typography`:{`font-family|`:`Open Sans`}}}}"]
+                        [pizzaro_products_with_gallery orderby="__empty__" order="__empty__" _id="663783" shortcode_tag="product_category" limit="4" columns="4" category="76"]
+                        [/pizzaro_products_with_gallery]
+                    [/kc_tab]
+                [/kc_tabs]
+            [/kc_column]
+        [/kc_row]
+    ');
+}
+
+add_action('wp_footer', 'add_custom_css');
+function add_custom_css() {
+    global $current_user;
+    ?>
+    <script>
+        jQuery(document).ready(function($) {
+
+        if ($('.kc_tabs_nav').length > 0) {
+
+            <?php if ( is_user_logged_in() ) { ?>
+                console.log('2 is_user_logged_in');
+                $('ul.kc_tabs_nav').addClass('original').clone().insertAfter('ul.kc_tabs_nav').addClass('cloned').css('position','fixed').css('top','100.06px').css('margin-top','100.06px').css('z-index','5000').removeClass('original').hide();
+              <?php } else { ?> 
+                console.log('2 not is_user_logged_in');
+                $('ul.kc_tabs_nav').addClass('original').clone().insertAfter('ul.kc_tabs_nav').addClass('cloned').css('position','fixed').css('top','70.06px').css('margin-top','70.06px').css('z-index','5000').removeClass('original').hide();
+              <?php } ?> 
+
+            
+
+            scrollIntervalID = setInterval(stickIt, 10);
+
+
+            function stickIt() {
+
+              var orgElementPos = $('.original').offset();
+
+              <?php if ( is_user_logged_in() ) { ?>
+                //console.log('is_user_logged_in');
+                orgElementTop = orgElementPos.top-100.06;
+              <?php } else { ?> 
+                //console.log('not is_user_logged_in');
+                orgElementTop = orgElementPos.top-70.06; 
+              <?php } ?>             
+
+              if ($(window).scrollTop() >= (orgElementTop)) {
+                // scrolled past the original position; now only show the cloned, sticky element.
+
+                // Cloned element should always have same left position and width as original element.     
+                orgElement = $('.original');
+                coordsOrgElement = orgElement.offset();
+                leftOrgElement = coordsOrgElement.left;  
+                widthOrgElement = orgElement.css('width');
+                $('.cloned').css('left',leftOrgElement+'px').css('top',0).css('width',widthOrgElement).show();
+                $('.original').css('visibility','hidden');
+              } else {
+                // not scrolled past the menu; only show the original menu.
+                $('.cloned').hide();
+                $('.original').css('visibility','visible');
+              }
+            }
+        }     
+
+            
+        });
+
+    </script>
+    <style>
+        .shop-archive-header {
+            display: none;
+        }
+        .cart_item .variation-Baseprice {
+            display: none;
+        }
+        @media (min-width: 1200px) {
+            .products-with-gallery-tabs.kc_tabs .kc_tabs_nav li a {
+                padding: 10px 10px .692em;
+            }
+        }
+        @media (max-width: 700px) {
+            .kc_tabs_nav.ui-tabs-nav.kc_clearfix.cloned {
+                display: none !important;
+            }
+        }
+    </style>
+    <?php
+}
+
+
+add_filter('request', function( $vars ) {
+    global $wpdb;
+    if( ! empty( $vars['pagename'] ) || ! empty( $vars['category_name'] ) || ! empty( $vars['name'] ) || ! empty( $vars['attachment'] ) ) {
+        $slug = ! empty( $vars['pagename'] ) ? $vars['pagename'] : ( ! empty( $vars['name'] ) ? $vars['name'] : ( !empty( $vars['category_name'] ) ? $vars['category_name'] : $vars['attachment'] ) );
+        $exists = $wpdb->get_var( $wpdb->prepare( "SELECT t.term_id FROM $wpdb->terms t LEFT JOIN $wpdb->term_taxonomy tt ON tt.term_id = t.term_id WHERE tt.taxonomy = 'product_cat' AND t.slug = %s" ,array( $slug )));
+        if( $exists ){
+            $old_vars = $vars;
+            $vars = array('product_cat' => $slug );
+            if ( !empty( $old_vars['paged'] ) || !empty( $old_vars['page'] ) )
+                $vars['paged'] = ! empty( $old_vars['paged'] ) ? $old_vars['paged'] : $old_vars['page'];
+            if ( !empty( $old_vars['orderby'] ) )
+                $vars['orderby'] = $old_vars['orderby'];
+            if ( !empty( $old_vars['order'] ) )
+                $vars['order'] = $old_vars['order'];
+        }
+    }
+    return $vars;
+});
+add_filter('term_link', 'term_link_filter', 10, 3);
+function term_link_filter( $url, $term, $taxonomy ) {
+    $url=str_replace("/./","/",$url);
+     return $url;
+}

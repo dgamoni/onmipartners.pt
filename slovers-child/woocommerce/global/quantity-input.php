@@ -22,7 +22,7 @@ if (!defined('ABSPATH')) {
 ?>
 
 <div class="qty-btn">
-    <label><?php echo esc_html__('Quantity', 'pizzaro'); ?></label>
+    <label><?php echo esc_html__('Quantidade', 'pizzaro'); ?></label>
     <div class="quantity buttons_added">
         <input type="button" value="-" class="minus">
         <input type="number" step="<?php echo esc_attr($step); ?>" min="<?php echo esc_attr($min_value); ?>"

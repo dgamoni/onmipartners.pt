@@ -201,34 +201,34 @@
     var map = null;
 
     $(document).ready(function(){
-        if ($('.kc_tabs_nav').length > 0) {
-            $('ul.kc_tabs_nav').addClass('original').clone().insertAfter('ul.kc_tabs_nav').addClass('cloned').css('position','fixed').css('top','100.06px').css('margin-top','100.06px').css('z-index','5000').removeClass('original').hide();
+        // if ($('.kc_tabs_nav').length > 0) {
+        //     $('ul.kc_tabs_nav').addClass('original').clone().insertAfter('ul.kc_tabs_nav').addClass('cloned').css('position','fixed').css('top','100.06px').css('margin-top','100.06px').css('z-index','5000').removeClass('original').hide();
 
-            scrollIntervalID = setInterval(stickIt, 10);
+        //     scrollIntervalID = setInterval(stickIt, 10);
 
 
-            function stickIt() {
+        //     function stickIt() {
 
-              var orgElementPos = $('.original').offset();
-              orgElementTop = orgElementPos.top-100.06;               
+        //       var orgElementPos = $('.original').offset();
+        //       orgElementTop = orgElementPos.top-100.06;               
 
-              if ($(window).scrollTop() >= (orgElementTop)) {
-                // scrolled past the original position; now only show the cloned, sticky element.
+        //       if ($(window).scrollTop() >= (orgElementTop)) {
+        //         // scrolled past the original position; now only show the cloned, sticky element.
 
-                // Cloned element should always have same left position and width as original element.     
-                orgElement = $('.original');
-                coordsOrgElement = orgElement.offset();
-                leftOrgElement = coordsOrgElement.left;  
-                widthOrgElement = orgElement.css('width');
-                $('.cloned').css('left',leftOrgElement+'px').css('top',0).css('width',widthOrgElement).show();
-                $('.original').css('visibility','hidden');
-              } else {
-                // not scrolled past the menu; only show the original menu.
-                $('.cloned').hide();
-                $('.original').css('visibility','visible');
-              }
-            }
-        }
+        //         // Cloned element should always have same left position and width as original element.     
+        //         orgElement = $('.original');
+        //         coordsOrgElement = orgElement.offset();
+        //         leftOrgElement = coordsOrgElement.left;  
+        //         widthOrgElement = orgElement.css('width');
+        //         $('.cloned').css('left',leftOrgElement+'px').css('top',0).css('width',widthOrgElement).show();
+        //         $('.original').css('visibility','hidden');
+        //       } else {
+        //         // not scrolled past the menu; only show the original menu.
+        //         $('.cloned').hide();
+        //         $('.original').css('visibility','visible');
+        //       }
+        //     }
+        // }
 
         $('.acf-map').each(function(){
 

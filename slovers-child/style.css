@@ -82,8 +82,10 @@ h2.woocommerce-loop-product__title {
 
     color: #006072;
 
-    font-size: 2em !important;
-
+    /*font-size: 2em !important;*/
+    font-size: 1.2em !important;
+    max-width: 117px !important;
+    height: inherit !important;
     font-weight: 600 !important;
 
 }
@@ -354,6 +356,7 @@ ul.products li.product:hover .product-image-wrapper {
 }
 
 @media (min-width: 1200px) {
+
     .header-phone-numbers {
     margin-left: -70px;
     }
@@ -363,7 +366,8 @@ ul.products li.product:hover .product-image-wrapper {
     }
      .user_icon_area {
         position: relative;
-        margin-right: 0;
+        /*margin-right: 0;*/
+        margin-right: 5px;
         width: 30px;
     }
 }
