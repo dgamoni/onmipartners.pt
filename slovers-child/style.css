@@ -352,7 +352,7 @@ ul.products li.product:hover .product-image-wrapper {
 }
 
 .user_icon_area img {
-    border-radius: 50%;
+    /*border-radius: 50%;*/
 }
 
 @media (min-width: 1200px) {
@@ -719,3 +719,76 @@ header#masthead {
 .pizzaro-order-steps ul li+li {
     padding-left: 150px;
 }
+
+.products-with-gallery-tabs .kc_tab_content {
+    display: none;
+}
+.products-with-gallery-tabs {
+    z-index: 9;
+    position: relative;
+}
+.kc_tabs.products-with-gallery-tabs {
+    margin-bottom: -9px;
+}
+
+
+.kc_wrap_instagram .cpicon.kc-icon-instagram {
+    background-position: -387px -225px;
+}
+
+.kc_wrap_instagram .cpicon {
+    width: 70px;
+    position: relative;
+    float: left;
+    background-image: url('img/icons.png');
+    background-repeat: no-repeat;
+    background-size: 500px 1085px;
+    height: 60px;
+    transform: scale(0.8) translateX(-5px);
+}
+.kc_wrap_instagram .cpicon:before {
+    font-size: 40px;
+    width: 70px;
+    height: 60px;
+    text-align: center;
+    display: inline-block;
+    line-height: 60px;
+    color: #42BCE2;
+}
+.kc_wrap_instagram .kc-widget-title {
+    display: flex;
+    flex-flow: row-reverse;
+    justify-content: flex-end;
+    align-items: center;
+}
+.header-phone-numbers .select-city-phone-numbers {
+    font-size: 17px;
+    background: none;
+    z-index: 1;
+}
+#arr_ow {
+    width: 10px;
+    height: 10px;
+    margin-left: -18px;
+    z-index: 0;
+}
+#arr_ow:after {
+    content: '>';
+    position: absolute;
+    color: white;
+    top: 0;
+    transform: rotate(90deg);
+    font-family: monospace;
+    font-size: 20px;
+}
+.payment-fixed {
+    margin-top: 185px;
+}
+.woocommerce-cart .kc-css-824890,
+.woocommerce-checkout .kc-css-824890,
+.woocommerce-account .kc-css-824890 {
+        margin-bottom: 53px;
+}
+/*.tax-product_cat .kc-css-824890 {
+        margin-bottom: 0px;
+}*/

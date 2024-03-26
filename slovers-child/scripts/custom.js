@@ -201,6 +201,9 @@
     var map = null;
 
     $(document).ready(function(){
+
+        $('.kc-widget-title').append('<span class="cpicon kc-icon-instagram"></span>');
+
         // if ($('.kc_tabs_nav').length > 0) {
         //     $('ul.kc_tabs_nav').addClass('original').clone().insertAfter('ul.kc_tabs_nav').addClass('cloned').css('position','fixed').css('top','100.06px').css('margin-top','100.06px').css('z-index','5000').removeClass('original').hide();
 

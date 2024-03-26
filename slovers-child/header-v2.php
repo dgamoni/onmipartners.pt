@@ -49,7 +49,7 @@
 					<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/cart-icon.svg">
 				</a>
 			<?php } else { ?>
-			<a class="user_icon_area" href="<?php echo wp_login_url(); ?>">
+			<a class="user_icon_area" href="<?php echo get_bloginfo('url'); ?>/my-account/">
 				<!-- <img src="<?php //echo  get_bloginfo('template_url') . '/assets/images/mystery.jpg'; ?>"> -->
 				<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/account-icon.svg">
 			</a>

@@ -126,3 +126,18 @@ get_header( 'shop' ); ?>
 	?>
 
 <?php get_footer( 'shop' ); ?>
+
+<?php if(is_product_category()): ?>
+    <?php $catname = get_queried_object()->slug;
+    //var_dump($catname);
+     ?>
+	<script>
+		jQuery(document).ready(function($) {
+		    //console.log('<?php echo $catname; ?>');
+		    $('ul.original li').removeClass('ui-tabs-active');
+		    $('ul.original li.<?php echo $catname; ?>').addClass('ui-tabs-active');
+		    $('ul.cloned li').removeClass('ui-tabs-active');
+		    $('ul.cloned li.<?php echo $catname; ?>').addClass('ui-tabs-active');  
+		});
+    </script>
+<?php endif; ?>

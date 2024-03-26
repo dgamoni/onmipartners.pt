@@ -162,50 +162,59 @@ add_filter( 'pizzaro_order_steps', function ($steps) {
 
 function pizza_header_tabs_html(){
     echo '
-<ul class="kc_tabs_nav ui-tabs-nav kc_clearfix original">
-    <li class="ui-tabs-active">
-        <a href="#" data-prevent="scroll"><i class="icon-menus"></i> Combinados</a>
-    </li>
-    <li>
-        <a href="#" data-prevent="scroll"><i class="icon-uramakis"></i> Uramaki</a>
-    </li>
-    <li>
-        <a href="#" data-prevent="scroll"><i class="icon-hosomakis"></i> Hosomaki</a>
-    </li>
-    <li>
-        <a href="#" data-prevent="scroll"><i class="icon-gunkan"></i> Gunkan</a>
-    </li>
-    <li>
-        <a href="#" data-prevent="scroll"><i class="icon-niguiris"></i> Nigiri</a>
-    </li>
-    <li>
-        <a href="#" data-prevent="scroll"><i class="icon-sashimi"></i> Sashimi</a>
-    </li>
-    <li>
-        <a href="#" data-prevent="scroll"><i class="icon-tataki"></i> Tataki</a>
-    </li>
-    <li>
-        <a href="#" data-prevent="scroll"><i class="icon-tartaro"></i> Tártaro</a>
-    </li>
-    <li>
-        <a href="#" data-prevent="scroll"><i class="icon-ceviche"></i> Ceviche</a>
-    </li>
-    <li>
-        <a href="#" data-prevent="scroll"><i class="icon-temaki"></i> Temaki</a>
-    </li>
-    <li>
-        <a href="#" data-prevent="scroll"><i class="icon-quentes"></i> Quentes</a>
-    </li>
-    <li>
-        <a href="#" data-prevent="scroll"><i class="icon-bebidas"></i> Bebidas</a>
-    </li>
-    <li>
-        <a href="#" data-prevent="scroll"><i class="icon-sobremesa"></i> Sobremesas</a>
-    </li>
-    <li>
-        <a href="#" data-prevent="scroll"><i class="icon-extras"></i> Extras</a>
-    </li>
-</ul>
+<section class="kc-elm kc-css-824890 kc_row"><div class="kc-row-container  kc-container"><div class="kc-wrap-columns">
+    <div class="kc-elm kc-css-656687 kc_col-sm-12 kc_column kc_col-sm-12"><div class="stretch-full-width kc-col-container">
+        <div data-open-on-mouseover="" data-tab-active="1" data-effect-option="" class="kc-elm kc-css-29983 kc_tabs group products-with-gallery-tabs">
+            <div class="kc_wrapper ui-tabs kc_clearfix">
+
+                <ul class="kc_tabs_nav ui-tabs-nav kc_clearfix original">
+                    <li class="ui-tabs-active">
+                        <a href="#" data-prevent="scroll"><i class="icon-menus"></i>Combinados</a>
+                    </li>
+                    <li>
+                        <a href="#" data-prevent="scroll"><i class="icon-uramakis"></i>Uramaki</a>
+                    </li>
+                    <li>
+                        <a href="#" data-prevent="scroll"><i class="icon-hosomakis"></i>Hosomaki</a>
+                    </li>
+                    <li>
+                        <a href="#" data-prevent="scroll"><i class="icon-gunkan"></i>Gunkan</a>
+                    </li>
+                    <li>
+                        <a href="#" data-prevent="scroll"><i class="icon-niguiris"></i>Niguiri</a>
+                    </li>
+                    <li>
+                        <a href="#" data-prevent="scroll"><i class="icon-sashimi"></i>Sashimi</a>
+                    </li>
+                    <li>
+                        <a href="#" data-prevent="scroll"><i class="icon-tataki"></i>Tataki</a>
+                    </li>
+                    <li>
+                        <a href="#" data-prevent="scroll"><i class="icon-tartaro"></i>Tártaro</a>
+                    </li>
+                    <li>
+                        <a href="#" data-prevent="scroll"><i class="icon-ceviche"></i>Ceviche</a>
+                    </li>
+                    <li>
+                        <a href="#" data-prevent="scroll"><i class="icon-temaki"></i>Temaki</a>
+                    </li>
+                    <li>
+                        <a href="#" data-prevent="scroll"><i class="icon-quentes"></i>Quentes</a>
+                    </li>
+                    <li>
+                        <a href="#" data-prevent="scroll"><i class="icon-bebidas"></i>Bebidas</a>
+                    </li>
+                    <li>
+                        <a href="#" data-prevent="scroll"><i class="icon-sobremesa"></i>Sobremesas</a>
+                    </li>
+                    <li>
+                        <a href="#" data-prevent="scroll"><i class="icon-extras"></i>Extras</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</sectoin>    
     ';
 }
 function pizza_header_tabs() {
@@ -221,7 +230,7 @@ function pizza_header_tabs() {
                         [pizzaro_products_with_gallery orderby="__empty__" order="__empty__" _id="799695" shortcode_tag="product_category" limit="4" columns="4" category="64"]
                         [/pizzaro_products_with_gallery][/kc_tab][kc_tab title="Gunkan" _id="101054" icon_option="yes" icon="icon-gunkan"]
                         [pizzaro_products_with_gallery orderby="__empty__" order="__empty__" _id="886009" shortcode_tag="product_category" limit="4" columns="4" category="65"]
-                        [/pizzaro_products_with_gallery][/kc_tab][kc_tab title="Nigiri" _id="321731" icon_option="yes" icon="icon-niguiris"]
+                        [/pizzaro_products_with_gallery][/kc_tab][kc_tab title="Niguiri" _id="321731" icon_option="yes" icon="icon-niguiris"]
                         [pizzaro_products_with_gallery orderby="__empty__" order="__empty__" _id="310713" shortcode_tag="product_category" limit="4" columns="4" category="66"]
                         [/pizzaro_products_with_gallery][/kc_tab][kc_tab title="Sashimi" _id="668016" icon_option="yes" icon="icon-sashimi"]
                         [pizzaro_products_with_gallery orderby="date" order="__empty__" _id="630038" shortcode_tag="product_category" limit="4" columns="4" category="67"]
@@ -265,13 +274,70 @@ function add_custom_css() {
 
             <?php if ( is_user_logged_in() ) { ?>
                 console.log('2 is_user_logged_in');
-                $('ul.kc_tabs_nav').addClass('original').clone().insertAfter('ul.kc_tabs_nav').addClass('cloned').css('position','fixed').css('top','100.06px').css('margin-top','100.06px').css('z-index','5000').removeClass('original').hide();
+                $('ul.kc_tabs_nav').addClass('original').clone().insertAfter('ul.kc_tabs_nav').addClass('cloned').css('position','fixed').css('top','100.06px').css('margin-top','100.06px').css('z-index','9999999').removeClass('original').hide();
               <?php } else { ?> 
                 console.log('2 not is_user_logged_in');
-                $('ul.kc_tabs_nav').addClass('original').clone().insertAfter('ul.kc_tabs_nav').addClass('cloned').css('position','fixed').css('top','70.06px').css('margin-top','70.06px').css('z-index','5000').removeClass('original').hide();
+                $('ul.kc_tabs_nav').addClass('original').clone().insertAfter('ul.kc_tabs_nav').addClass('cloned').css('position','fixed').css('top','70.06px').css('margin-top','70.06px').css('z-index','9999999').removeClass('original').hide();
               <?php } ?> 
 
-            
+            //$('ul.original li').removeClass('ui-tabs-active');
+            $('.select-city-phone-numbers').after('<div id="arr_ow"></div>');
+
+            $('ul.original li, ul.cloned li').each(function(index, el) {
+                //$(el).removeClass('ui-tabs-active');
+                $(el).attr('data-num', index);
+                var name = $(el).find('a i').attr('class').split('-');
+                var name = $(el).find('a').text().toLowerCase().replace(" ", "");
+
+                var from = "ãàáäâẽèéëêìíïîõòóöôùúüûñç·/_,:;";
+                  var to   = "aaaaaeeeeeiiiiooooouuuunc------";
+                  for (var i=0, l=from.length ; i<l ; i++) {
+                    name = name.replace(new RegExp(from.charAt(i), 'g'), to.charAt(i));
+                  }
+
+                var link = $(el).find('a').attr('href', '<?php echo get_bloginfo('url'); ?>/'+name);
+                $(el).addClass(name);
+            });
+
+            // $('ul.cloned li').each(function(index, el) {
+            //     $(el).attr('data-num', index);
+            //     if(index == 0){
+            //         $(el).addClass('ui-tabs-active');
+            //     }
+            // });
+
+
+
+
+            $('ul.original li a').click(function(event) {
+                console.log($(this));
+                //var tabsactive = $('ul.original .ui-tabs-active').attr('data-num');
+                var tabsactive = $(this).parent('li').attr('data-num');
+                console.log(tabsactive);
+                $('ul.cloned li').removeClass('ui-tabs-active');
+                $('ul.cloned li').each(function(index, el) {
+                    if($(el).attr('data-num') == tabsactive){
+                        $(el).addClass('ui-tabs-active');
+                    }
+                });
+                window.location.href = $(this).attr('href');
+            });
+            $('ul.cloned li a').click(function(event) {
+                console.log($(this));
+                //var tabsactive = $('ul.original .ui-tabs-active').attr('data-num');
+                var tabsactive = $(this).parent('li').attr('data-num');
+                console.log(tabsactive);
+                $('ul.original li').removeClass('ui-tabs-active');
+                $('ul.original li').each(function(index, el) {
+                    if($(el).attr('data-num') == tabsactive){
+                        $(el).addClass('ui-tabs-active');
+                    }
+                });
+                window.location.href = $(this).attr('href');
+            });
+
+
+
 
             scrollIntervalID = setInterval(stickIt, 10);
 
@@ -293,6 +359,9 @@ function add_custom_css() {
 
                 // Cloned element should always have same left position and width as original element.     
                 orgElement = $('.original');
+                
+
+
                 coordsOrgElement = orgElement.offset();
                 leftOrgElement = coordsOrgElement.left;  
                 widthOrgElement = orgElement.css('width');
@@ -311,11 +380,31 @@ function add_custom_css() {
 
     </script>
     <style>
+        .kc_tabs_nav.ui-tabs-nav {
+            z-index: 99999999 !important;
+        }
+        .products .owl-item>.product.hover, .products .owl-item>.product:hover, ul.products li.product.hover, ul.products li.product:hover {
+            z-index: 1;
+        }
+        .yith_magnifier_zoom_wrap {
+            z-index: 1;
+        }
+        .ywapo_input_container_radio:not(.pz-radio-default) label span {
+            z-index: 0;
+        }
+/*        .yith_magnifier_mousetrap {
+            z-index: 1;
+        }*/
         .shop-archive-header {
             display: none;
         }
         .cart_item .variation-Baseprice {
             display: none;
+        }
+        @media (max-width: 1200px) {
+            .kc-css-824890 {
+                display: none;
+            }
         }
         @media (min-width: 1200px) {
             .products-with-gallery-tabs.kc_tabs .kc_tabs_nav li a {
